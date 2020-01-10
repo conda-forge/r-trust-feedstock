@@ -7,7 +7,6 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: trust_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/trust_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/trust/trust_{{ version }}.tar.gz
@@ -22,11 +21,8 @@ build:
     - lib/
 
 requirements:
-  build:
-
   host:
     - r-base
-
   run:
     - r-base
 
@@ -41,7 +37,6 @@ about:
   license_file: 
     - LICENSE 
     - COPYING 
-
   summary: Does local optimization using two derivatives and trust regions. Guaranteed to converge
     to local minimum of objective function.
   license_family: MIT
@@ -49,9 +44,4 @@ about:
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
     - stevierene82
