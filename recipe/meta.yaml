@@ -1,4 +1,4 @@
-{% set version = '0.1-7' %}
+{% set version = "0.1-8" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,11 +11,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/trust_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/trust/trust_{{ version }}.tar.gz
-  sha256: e3d15aa84a71becd2824253d4a8156bdf1ab9ac3b72ced0cd53f3bb370ac6f04
+  sha256: 952e348b62aec35988b103fd152329662cb6a451538f184549252fbf49d7dcac
 
 build:
   noarch: generic
-  number: 1001
+  number: 0
 
   rpaths:
     - lib/R/lib/
@@ -38,6 +38,10 @@ test:
 about:
   home: http://www.stat.umn.edu/geyer/trust/
   license: MIT
+  license_file: 
+    - LICENSE 
+    - COPYING 
+
   summary: Does local optimization using two derivatives and trust regions. Guaranteed to converge
     to local minimum of objective function.
   license_family: MIT
