@@ -1,11 +1,11 @@
-About r-trust
-=============
+About r-trust-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-trust-feedstock/blob/main/LICENSE.txt)
 
 Home: http://www.stat.umn.edu/geyer/trust/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-trust-feedstock/blob/main/LICENSE.txt)
 
 Summary: Does local optimization using two derivatives and trust regions. Guaranteed to converge to local minimum of objective function.
 
